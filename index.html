@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="icon" href="https://img.icons8.com/fluency/512/partly-cloudy-day.png" type="image/icon type">
+
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-light bg-light justify-content-between fixed-top bg-transparent">
+            <a class="navbar-logo ">
+                <img src="" alt="">
+            </a>
+            <form class="form-inline">
+                <input id="city" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="main">
+            <h1 class="text-center">Weather for <span id="cityName"></span></h1>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="temperature.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">TEMPERATURE <span>(&#8451);</span></h5>
+                        <ul class="temp-list">
+                            <li>Temperature is <span id="temp"></span></li>
+                            <li>Min Temperature is <span id="min_temp"></span></li>
+                            <li>Max Temperature is <span id="max_temp"></span></li>
+                        </ul>
+                        <p>Temperature is the degree of hotness or coldness of an object.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div> -->
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="humi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">HUMIDITY <span>(&#37;)</span>
+                        </h5>
+                        <ul class="temp-list">
+                            <li>Cloud_pct is <span id="cloud_pct"></span></li>
+                            <li>Feels like <span id="feels_like"></span></li>
+                            <li>Humidity is <span id="humidity"></span></li>
+                        </ul>
+                        <p>Humidity is the amount of water vapor in the air.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div> -->
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="wind.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">WIND <span>(Km/hr)</span></h5>
+                        <ul class="temp-list">
+                            <li>Wind Speed is <span id="wind_speed"></span></li>
+                            <!-- <li>Wind Degree is <span id="wind_degrees"></span></li> -->
+                            <li>Sunrise Time is <span id="sunrise"></span></li>
+                            <li>Sunset Time is <span id="sunset"></span></li>
+                        </ul>
+                        <p>Wind is the movement or rush of air or an air current.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="weather-table">
+        <div id="caption" class="text-center">Weather of other common place</div>
+        <div id="table">
+            <div class="head">City</div>
+            <div class="head">Cloud_pct</div>
+            <div class="head">Feels_like</div>
+            <div class="head">Humidity</div>
+            <div class="head">Max_temp</div>
+            <div class="head">Min_temp</div>
+            <div class="head">Sunrise</div>
+            <div class="head">Sunset</div>
+            <div class="head">Temp</div>
+            <div class="head">Wind_degrees</div>
+            <div class="head">Wind_speed</div>
+
+            <div>Shanghai</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+
+            <div>Sydney</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div>Kolkata</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/82d87ab33d.js" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>

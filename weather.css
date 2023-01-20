@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    font-style: oblique;
+    margin-bottom: 3%;
+}
+
+body {
+  background-image: url("landscape-1844226_1280.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form{
+  margin: 15px 0;
+}
+
+nav{
+    position: relative;
+}
+
+nav img {
+  width: 75px;
+}
+
+.card > img{
+    height: 150px;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.main {
+  margin: 10% 5% 0 5%;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* #caption{
+    color: blanchedalmond;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+     margin-top: 2%;
+}
+#table{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    color: rgb(246, 246, 249);
+    margin: 1% 5% 0 5%;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+#table > div{
+    padding: 12px;
+} */
